@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <a href="#" class="logo">Desafío de Programación</a>
+            <h2>Ingrese el texto aquí</h2>
+            <textarea id="textoEntrada" rows="10" placeholder="Use solo texto en minúscula y sin acentos."></textarea>
+            <div class="btn-area">
+                <button type="button" onclick="encriptar()">Encriptar</button>
+                <button type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="placeholder" id="placeholder">
+                <img src="img/candado.png" alt="Placeholder">
+                <p>Ningún mensaje fue encontrado</p>
+            </div>
+            <textarea id="textoSalida" rows="10" readonly></textarea>
+            <button class="copy-btn" type="button" onclick="copiarAlPortapapeles()">Copiar</button>
+        </div>
+    </div>
+    
+    <footer>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/kevin-hernán-ezequiel-nieto-vera-bb2256309/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/keheez/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/keheez/" target="_blank">Instagram</a></li>
+            <p>Desarollado por Kevin Nieto</p>
+        </ul>
+    </footer>    
+
+    <script src="app.js"></script>
+</body>
+</html>
